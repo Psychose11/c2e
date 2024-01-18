@@ -1,10 +1,10 @@
 const mysql = require("mysql");
 
 let con = mysql.createConnection({  
-    host: "sql109.infinityfree.com",  
-    user: "if0_35809533",  
-    password: "HvqStAsFCbnH",  
-    database: "if0_35809533_c2e"  
+    host: "fdb1034.awardspace.net",  
+    user: "4429444_c2e",  
+    password: "psychose19",  
+    database: "4429444_c2e"  
     }); 
 
 
