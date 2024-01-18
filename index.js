@@ -276,6 +276,11 @@ app.post('/get-login', (req, res) => {
     });
 });
 
+//test
+app.get("/",(req,res) =>{
+console.log("hello i'm the backend");
+});
+
 //get token from cache device
 app.use('/token', (req, res) => {
 
