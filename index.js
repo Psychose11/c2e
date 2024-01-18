@@ -10,7 +10,7 @@ const currrentDateAndHour = require('./currentDate.js');
 
 const { token } = require('morgan');
 const fs = require('fs');
-const https = require('https');
+const http = require('http');
 const { ifError } = require('assert');
 
 const privateKey = fs.readFileSync('server.key', 'utf8');
@@ -22,7 +22,7 @@ const credentials = { key: privateKey, cert: certificate };
 
 const app = express();
 const port = 3000;
-const httpsServer = https.createServer(credentials, app);
+const httpsServer = http.createServer(credentials, app);
 
 
 
@@ -319,7 +319,7 @@ app.get('/get-active-profile/:token', (req, res) => {
     }
     else {
       const profilesWithImagePaths = results.map((profile) => ({
-        
+
         id: profile.id,
         photoDeProfilPath: `uploads/${profile.fichierUpload.toString('utf8')}`,
         nom: profile.nom,

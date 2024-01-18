@@ -1,10 +1,10 @@
 const mysql = require("mysql");
 
 let con = mysql.createConnection({  
-    host: "fdb1034.awardspace.net",  
-    user: "4429444_c2e",  
-    password: "psychose19",  
-    database: "4429444_c2e"  
+    host: "sql11.freemysqlhosting.net",  
+    user: "sql11677722",  
+    password: "RaQLGG6nWI",  
+    database: "sql11677722"  
     }); 
 
 
