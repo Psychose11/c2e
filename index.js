@@ -22,7 +22,7 @@ const credentials = { key: privateKey, cert: certificate };
 
 const app = express();
 const port = 3000;
-const httpsServer = http.createServer(credentials, app);
+const httpsServer = http.createServer(app);
 
 
 
